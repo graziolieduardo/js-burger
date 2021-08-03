@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linked FontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Linked CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS Burger</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- inizio header  -->
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="img/burger-top.png" alt="Burger">
+        </header>
+
+        <!-- inizio main  -->
+        <main>
+            <!-- main title  -->
+            <div class="burger-name">
+                <input type="text" placeholder="Name Your Burger">
+            </div>
+
+            <!-- ingredients  -->
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <div class="col-left">
+                    <div class="ing-box">
+                        <img src="img/cheese.svg" alt="Cheese">
+                        <span>Cheese</span>
+                        <input type="checkbox" class="ing-add" value="3" name="cheese" id="c-cheese">
+                        <span>add</span>
+                    </div>
+                    <div class="ing-box">
+                        <img src="img/fried-egg.svg" alt="Egg">
+                        <span>Egg</span>
+                        <input type="checkbox" class="ing-add" value="5" name="egg" id="c-egg">
+                        <span>add</span>
+                    </div>
+                    <div class="ing-box">
+                        <img src="img/mustard.svg" alt="Mustard">
+                        <span>Mustard</span>
+                        <input type="checkbox" class="ing-add" value="6" name="mustard" id="c-mustard">
+                        <span>add</span>
+                    </div>
+                </div>
+
+                <div class="col-right">
+                    <div class="ing-box">
+                        <img src="img/tomato.svg" alt="Tomato">
+                        <span>Tomato</span>
+                        <input type="checkbox" class="ing-add" value="3" name="tomato" id="c-tomato">
+                        <span>add</span>
+                    </div>
+                    <div class="ing-box">
+                        <img src="img/lettuce.svg" alt="Lettuce">
+                        <span>Lettuce</span>
+                        <input type="checkbox" class="ing-add" value="4" name="lettuce" id="c-lettuce">
+                        <span>add</span>
+                    </div>
+                    <div class="ing-box">
+                        <img src="img/ketchup.svg" alt="Ketchup">
+                        <span>Ketchup</span>
+                        <input type="checkbox" class="ing-add" value="5" name="ketchup" id="c-ketchup">
+                        <span>add</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main bottom  -->
+            <div class="discount">
+                <span>Discount Coupon</span>
+                <input type="text" placeholder="12354ABCDEF" id="sale">
+            </div>
+            <div class="btn-box">
+                <button id="btn-calc">calculate</button>
+            </div>
+        </main>
+
+        <!-- inizio footer  -->
+        <footer>
+            <span>Your Price</span>
+            <span id="tot-price">$50</span>
+        </footer>
+    </div>
+
+
+    <!-- Linked JS  -->
+    <script src="js/main.js"></script>
+</body>
+</html>

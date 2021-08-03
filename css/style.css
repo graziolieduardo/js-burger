@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* commmon  */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF5E2;  
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 45%;
+    margin: 0 auto;
+}
+
+
+/* header  */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 40px 50px;
+    background-color: #FDBB40;
+    font-size: 20px;
+}
+
+header img {
+    position: absolute;
+    top: -30px;
+    right: -60px;
+    width: 220px;
+}
+
+
+
+/* main  */
+
+main {
+    width: 100%;
+    height: calc(100vh - 220px);
+    padding: 50px;
+    background-color: white;
+}
+
+main .ingredients .col-left,
+main .ingredients .col-right {
+    float: left;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+main .burger-name {
+    margin-bottom: 40px;
+}
+
+main .burger-name input {
+    border: none;
+    font-size: 30px;
+}
+
+main .ingredients h2{
+    padding-bottom: 15px;
+}
+
+main .ingredients .ing-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    padding: 5px 0;
+}
+
+main .ingredients .ing-box img {
+    width: 50px;
+}
+
+main .ingredients .ing-box span:last-child {
+    color: #D33359;
+}
+
+main .ingredients .ing-add {
+    position: relative;
+    appearance: none;
+    background-color: #D33359;
+    width: 15px;
+    height: 15px;
+}
+
+main .ingredients .ing-add:checked:after {
+    position: absolute;
+    top: -6px;
+    left: -2px;
+    font-size: 22px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f00c';
+}
+
+main .discount {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+main .discount input {
+    width: 70%;
+    margin-left: 5px;
+    border: none;
+    background-color: #FFF5E2;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .btn-box {
+    text-align: center;
+}
+
+main .btn-box button {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #FDBB40;
+    font-weight: bold;
+}
+
+/* footer  */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #D33359;
+    color: white;
+    font-size: 30px;
+    padding: 0 50px;
+}
