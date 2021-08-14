@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Linked Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Linked BS CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Linked MS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Burger JS Bonus</title>
+</head>
+<body>
+    <div class="wrapper vh-100">
+        <!-- inizio header  -->
+        <header class="container-fluid p-0">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="pt-5 ps-5 fw-bold">Create Your Burger</h1>
+                    <img src="../img/burger-top.png" alt="Burger Logo">
+                </div>
+            </div>
+        </header>
+
+        <!-- inizio main  -->
+        <main class="container-fluid">
+            <!-- Burger Name  -->
+            <div class="row">
+                <div class="col text-center text-lg-start px-md-5">
+                    <input id="ms_burger-name" class="my-3 border-0 fs-3 text-center text-lg-start" type="text" placeholder="Name Your Burger">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center text-lg-start px-md-5">
+                    <h2 class="fs-4">Ingredients</h2>
+                </div>
+            </div>
+
+            <!-- Ingredients  -->
+            <div class="row">
+                <div class="col ms_ingredients d-md-flex flex-wrap px-md-5">
+                    <div class="ms_ing-box d-none active d-flex flex-column flex-md-row  justify-content-center justify-content-md-start align-items-center">
+                        <img class="py-4" src="../img/cheese.svg" alt="Cheese">
+                        <div class="ms_ing-input">
+                            <span class="px-2 fs-4 fw-bold">Cheese</span>
+                            <input class="px-2 ms_ing-add" type="checkbox" value="6">
+                            <span class="px-2 fs-5 text-danger">add</span>
+                        </div>
+                    </div>
+                
+                    <div class="ms_ing-box d-none d-flex flex-column flex-md-row  justify-content-center justify-content-md-start align-items-center">
+                        <img class="py-4" src="../img/fried-egg.svg" alt="Egg">
+                        <div class="ms_ing-input">
+                            <span class="px-2 fs-4 fw-bold">Egg</span>
+                            <input class="px-2 ms_ing-add" type="checkbox" value="1">
+                            <span class="px-2 fs-5 text-danger">add</span>
+                        </div>
+                    </div>
+                
+                    <div class="ms_ing-box d-none d-flex flex-column flex-md-row  justify-content-center justify-content-md-start align-items-center">
+                        <img class="py-4" src="../img/mustard.svg" alt="Mustard">
+                        <div class="ms_ing-input">
+                            <span class="px-2 fs-4 fw-bold">Mustard</span>
+                            <input class="px-2 ms_ing-add" type="checkbox" value="2">
+                            <span class="px-2 fs-5 text-danger">add</span>
+                        </div>
+                    </div>
+                
+                    <div class="ms_ing-box d-none d-flex flex-column flex-md-row  justify-content-center justify-content-md-start align-items-center">
+                        <img class="py-4" src="../img/tomato.svg" alt="Tomato">
+                        <div class="ms_ing-input">
+                            <span class="px-2 fs-4 fw-bold">Tomato</span>
+                            <input class="px-2 ms_ing-add" type="checkbox" value="3">
+                            <span class="px-2 fs-5 text-danger">add</span>
+                        </div>
+                    </div>
+                
+                    <div class="ms_ing-box d-none d-flex flex-column flex-md-row  justify-content-center justify-content-md-start align-items-center">
+                        <img class="py-4" src="../img/lettuce.svg" alt="Lettuce">
+                        <div class="ms_ing-input">
+                            <span class="px-2 fs-4 fw-bold">Lettuce</span>
+                            <input class="px-2 ms_ing-add" type="checkbox" value="4">
+                            <span class="px-2 fs-5 text-danger">add</span>
+                        </div>
+                    </div>
+                
+                    <div class="ms_ing-box d-none d-flex flex-column flex-md-row  justify-content-center justify-content-md-start align-items-center">
+                        <img class="py-4" src="../img/ketchup.svg" alt="Ketchup">
+                        <div class="ms_ing-input">
+                            <span class="px-2 fs-4 fw-bold">Ketchup</span>
+                            <input class="px-2 ms_ing-add" type="checkbox" value="5">
+                            <span class="px-2 fs-5 text-danger">add</span>
+                        </div>
+                    </div>
+
+                    <i id="slide-right" class="fas fa-chevron-right fs-2 p-3 d-md-none"></i>
+                    <i id="slide-left" class="fas fa-chevron-left fs-2 p-3 d-md-none"></i>
+                </div>
+            </div>
+
+            <!-- Discount  -->
+            <div class="row">
+                <div class="col my-3 text-center text-lg-start px-md-5">
+                    <span class="fw-bold me-1">Discount Coupon</span>
+                    <input id="discount" class="border-0 text-center text-lg-start" type="text" placeholder="12345ABCDEFG">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button id="ms_calc-btn">Calculate</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- inizio footer  -->
+        <footer class="container-fluid text-light fw-bold fs-3">
+            <div class="row h-100">
+                <div class="col h-100 d-flex justify-content-between align-items-center px-md-5">
+                    <span>
+                        Your Price:
+                    </span>
+                    <span id="price">
+                        $50.00
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+ 
+    <!-- Linked BS JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Linked MAIN JS  -->
+    <script src="js/main.js"></script>
+</body>
+</html>

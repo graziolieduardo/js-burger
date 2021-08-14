@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common  */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff5e2;
+    overflow: hidden;
+}
+
+/* Header  */
+
+header {
+    position: relative;
+    height: 100px;
+    background-color: #fdbb40;
+}
+
+header img {
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    width: 200px;
+}
+
+/* Main  */
+
+main {
+    height: calc(100vh - 190px);
+    background-color: white;
+    overflow: auto;
+    min-height: 300px;
+}
+
+main #ms_burger-name {
+    outline: 0;
+}
+
+main #ms_burger-name::placeholder {
+    text-align: center;
+}
+
+.ms_ingredients {
+    position: relative;
+}
+
+.ms_ingredients .fa-chevron-right,
+.ms_ingredients .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.ms_ingredients .fa-chevron-right {
+    right: 0;
+}
+
+.ms_ingredients .fa-chevron-left {
+    left: 0;
+}
+
+.active {
+    display: flex !important;
+}
+
+main .ms_ingredients img {
+    width: 230px;
+}
+
+main .ms_ingredients .ms_ing-add {
+    position: relative;
+    appearance: none;
+    background-color: #D33359;
+    width: 15px;
+    height: 15px;
+}
+
+main .ms_ingredients .ms_ing-add:hover {
+    box-shadow: 0px 0px 10px 5px #FDBB40;
+}
+
+main .ms_ingredients .ms_ing-add:checked:after {
+    content: '\f00c';
+    position: absolute;
+    top: -9px;
+    left: -2px;
+    font-size: 22px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+main #discount {
+    background-color: #fff5e2;
+    outline: 0;
+    border-radius: 5px;
+    width: 50%;
+}
+
+main  #ms_calc-btn {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #FDBB40;
+    font-weight: bold;
+}
+
+main #ms_calc-btn:active {
+    transform: scale(.98);
+    box-shadow: 0px 0px 5px;
+}
+
+main #ms_calc-btn:active #price {
+    transform: scale(.7);
+}
+
+/* footer  */
+footer {
+    height: 90px;
+    background-color: #d33359;
+}
+
+/* Media Query  */
+@media screen and (min-width: 769px) {
+    main .ms_ingredients img {
+        width: 60px;
+    }
+
+    .ms_ing-box {
+        display: flex !important;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    main #ms_burger-name::placeholder {
+        text-align: left;
+    }
+
+    main #discount {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1140px;
+        margin: 0 auto;
+    }
+}

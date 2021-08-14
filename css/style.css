@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-
 /* header  */
 
 header {
@@ -35,8 +34,6 @@ header img {
     right: -60px;
     width: 220px;
 }
-
-
 
 /* main  */
 
@@ -58,9 +55,10 @@ main .burger-name {
     margin-bottom: 40px;
 }
 
-main .burger-name input {
+main #burger-name {
     border: none;
     font-size: 30px;
+    outline: 0;
 }
 
 main .ingredients h2{
@@ -91,6 +89,11 @@ main .ingredients .ing-add {
     height: 15px;
 }
 
+main .ingredients .ing-add:active {
+    background-color: rgba(211, 51, 89, 0.7);
+    transform: scale(.8);
+}
+
 main .ingredients .ing-add:checked:after {
     position: absolute;
     top: -6px;
@@ -103,7 +106,6 @@ main .ingredients .ing-add:checked:after {
 
 main .discount {
     padding-bottom: 20px;
-    font-weight: bold;
 }
 
 main .discount input {
@@ -113,6 +115,7 @@ main .discount input {
     background-color: #FFF5E2;
     padding: 8px;
     border-radius: 10px;
+    outline: 0;
 }
 
 main .btn-box {
@@ -126,6 +129,11 @@ main .btn-box button {
     font-size: 20px;
     background-color: #FDBB40;
     font-weight: bold;
+}
+
+main .btn-box button:active {
+    transform: scale(.98);
+    box-shadow: 0px 0px 5px;
 }
 
 /* footer  */
